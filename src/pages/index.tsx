@@ -82,7 +82,7 @@ const IndexPage: React.FunctionComponent = () => {
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
-								src="../images/placeholder.jpg"
+								src="../images/pictures/calidad-operativa.png"
 								alt=""
 								layout="fullWidth"
 							/>
@@ -101,7 +101,8 @@ const IndexPage: React.FunctionComponent = () => {
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
-								src="../images/placeholder.jpg"
+								lassName="-translate-y-24"
+								src="../images/pictures/certificados.JPG"
 								alt=""
 								layout="fullWidth"
 							/>
@@ -120,7 +121,7 @@ const IndexPage: React.FunctionComponent = () => {
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
-								src="../images/placeholder.jpg"
+								src="../images/pictures/distribuidor-pemex.png"
 								alt=""
 								layout="fullWidth"
 							/>
@@ -139,7 +140,8 @@ const IndexPage: React.FunctionComponent = () => {
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
-								src="../images/placeholder.jpg"
+								className="-translate-y-8"
+								src="../images/pictures/contacto-servicio.JPG"
 								alt=""
 								layout="fullWidth"
 							/>

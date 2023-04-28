@@ -15,17 +15,14 @@ export const Gallery: React.FunctionComponent<Props> = ({
 	const [isVisorOpen, setIsVisorOpen] = React.useState(false);
 	const [currentImageIndx, setCurrentImageIndx] = React.useState<number>();
 	const visorBg = React.useRef();
-
 	const openImage = (index: number) => {
 		setCurrentImageIndx(index);
 		setIsVisorOpen(true);
 	};
-
 	const closeImage = () => {
 		setCurrentImageIndx(undefined);
 		setIsVisorOpen(false);
 	};
-
 	return (
 		<>
 			{isVisorOpen && (
@@ -37,14 +34,8 @@ export const Gallery: React.FunctionComponent<Props> = ({
 						}
 					}}
 					ref={visorBg}>
-					<div className="pb-4 text-white">
-						<button className="font-bold text-lg" onClick={closeImage}>
-							Cerrar foto
-						</button>
-					</div>
-					<GatsbyImage image={images[currentImageIndx].full} alt="" />
-					<div className="pt-4 text-white flex justify-between">
-						{currentImageIndx - 1 > 0 ? (
+					<div className="pb-4 text-white flex justify-between">
+						{currentImageIndx - 1 >= 0 ? (
 							<button
 								className="font-bold text-lg"
 								onClick={() => setCurrentImageIndx((prev) => prev - 1)}>
@@ -53,6 +44,9 @@ export const Gallery: React.FunctionComponent<Props> = ({
 						) : (
 							<span></span>
 						)}
+						<button className="font-bold text-lg" onClick={closeImage}>
+							Cerrar foto
+						</button>
 						{currentImageIndx + 1 < images.length && (
 							<button
 								className="font-bold text-lg"
@@ -61,6 +55,7 @@ export const Gallery: React.FunctionComponent<Props> = ({
 							</button>
 						)}
 					</div>
+					<GatsbyImage image={images[currentImageIndx].full} alt="" />
 				</div>
 			)}
 

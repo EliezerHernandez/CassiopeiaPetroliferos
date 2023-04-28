@@ -50,7 +50,7 @@ const ContactoPage: React.FunctionComponent = () => {
 				</div>
 				<StaticImage
 					className="img"
-					src="../images/placeholder.jpg"
+					src="../images/pictures/contacto-servicio.JPG"
 					alt=""
 					placeholder="blurred"
 					width={320}

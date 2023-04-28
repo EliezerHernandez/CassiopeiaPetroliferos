@@ -42,8 +42,10 @@ export const MainHeader: React.FunctionComponent = () => {
 						</Link>
 					</li>
 				</ul>
-				<a href="https://cassiopeia.strappberry.com/admin/login">
-					<button className="btn primary">Ingresar</button>
+				<a
+					className="btn primary"
+					href="https://cassiopeia.strappberry.com/admin/login">
+					Ingresar
 				</a>
 			</nav>
 		</header>
