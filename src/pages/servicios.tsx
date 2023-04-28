@@ -43,6 +43,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						</p>
 					</div>
 					<StaticImage
+						className="img"
 						src="../images/placeholder.jpg"
 						alt=""
 						placeholder="blurred"
@@ -60,6 +61,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						</p>
 					</div>
 					<StaticImage
+						className="img"
 						src="../images/placeholder.jpg"
 						alt=""
 						placeholder="blurred"
@@ -77,6 +79,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						</p>
 					</div>
 					<StaticImage
+						className="img"
 						src="../images/placeholder.jpg"
 						alt=""
 						placeholder="blurred"
@@ -94,6 +97,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						</p>
 					</div>
 					<StaticImage
+						className="img"
 						src="../images/placeholder.jpg"
 						alt=""
 						placeholder="blurred"
@@ -111,6 +115,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						</p>
 					</div>
 					<StaticImage
+						className="img"
 						src="../images/placeholder.jpg"
 						alt=""
 						placeholder="blurred"
@@ -128,6 +133,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						</p>
 					</div>
 					<StaticImage
+						className="img"
 						src="../images/placeholder.jpg"
 						alt=""
 						placeholder="blurred"

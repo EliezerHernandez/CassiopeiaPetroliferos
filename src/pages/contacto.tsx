@@ -49,6 +49,7 @@ const ContactoPage: React.FunctionComponent = () => {
 					</div>
 				</div>
 				<StaticImage
+					className="img"
 					src="../images/placeholder.jpg"
 					alt=""
 					placeholder="blurred"

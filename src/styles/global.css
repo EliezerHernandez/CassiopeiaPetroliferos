@@ -28,13 +28,11 @@
 	h5 {
 		@apply text-xl;
 	}
-
 	input[type='text'],
 	input[type='number'] {
 		@apply border border-neutral-300 rounded p-2;
 	}
 }
-
 @layer components {
 	.link {
 		transition: filter 0.3s ease;
@@ -62,29 +60,27 @@
 	.hero-container > * {
 		@apply absolute w-full h-full;
 	}
-
 	.servicios-item {
 		@apply p-8 px-inside flex gap-8 flex-col sm:flex-row;
 	}
-
 	.servicios-item:nth-child(2n) {
 		@apply bg-neutral-100 flex-row-reverse;
 	}
-
 	.form {
 		@apply flex flex-col gap-8;
 	}
-
 	.form-row {
 		@apply flex gap-8;
 	}
-
 	.form-row .input-group {
 		@apply w-full;
 	}
-
 	.input-group {
 		@apply flex flex-col gap-2;
+	}
+
+	.img {
+		@apply overflow-hidden shadow rounded;
 	}
 
 	@responsive {
