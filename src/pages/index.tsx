@@ -2,26 +2,40 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import SEO from '../components/common/SEO';
 import { Layout } from '../components/layout';
+
+//@ts-ignore
+import heroVideo from '../assets/main-hero-vid.mp4';
+
 const IndexPage: React.FunctionComponent = () => {
 	return (
 		<Layout>
 			<SEO title="Inicio | Cassiopeia" />
-			<section className="bg-primary-400 grid relative">
-				<StaticImage
-					className="absolute w-full h-full "
-					src="../images/wallpapers/caminosoleado.JPG"
-					alt="Banner"
-					placeholder="blurred"
-					transformOptions={{
-						duotone: {
-							highlight: '#8B94E1',
-							shadow: '#242B71',
-							opacity: 80,
-						},
-					}}
-				/>
-				<div className="flex flex-col gap-20 items-center p-8 col-span-full row-span-full z-10">
-					<div className="flex flex-col gap-4 text-center items-center px-inside text-white text-shadow">
+
+			<section id="main-hero" className="bg-primary-400 grid relative">
+				<div className="overflow-hidden absolute w-full h-full">
+					<video
+						autoPlay
+						loop
+						muted
+						className="absolute w-full translate-y-[-22rem]">
+						<source src={heroVideo} type="video/mp4" />
+						no sencontro video
+					</video>
+				</div>
+
+				<div
+					className=" bg-primary-400/50 
+					flex flex-col items-center p-8 gap-8
+					col-span-full row-span-full z-10 
+				">
+					<StaticImage
+						className="text-shadow-lg"
+						src="../images/tilesets/logo-white.png"
+						alt="Cassiopeia"
+						placeholder="tracedSVG"
+						width={500}
+					/>
+					<div className="flex flex-col gap-4 text-center items-center px-inside text-white text-shadow-lg">
 						<h1>Empresa 100% Mexicana</h1>
 						<p className="text-lg">
 							Dedicados a la comercialización de petrolíferos a nivel nacional a
@@ -31,11 +45,6 @@ const IndexPage: React.FunctionComponent = () => {
 							que garanticen la seguridad y confiabilidad operativa en las
 							instalaciones y equipos de nuestros clientes.
 						</p>
-					</div>
-					<div className="flex gap-2">
-						<div className="bg-white border-2 border-white rounded-full h-3 w-3"></div>
-						<div className="border-2 border-white rounded-full h-3 w-3"></div>
-						<div className="border-2 border-white rounded-full h-3 w-3"></div>
 					</div>
 				</div>
 			</section>
@@ -71,13 +80,11 @@ const IndexPage: React.FunctionComponent = () => {
 					aspectRatio={738 / 499}
 				/>
 			</section>
-
 			<section className="bg-neutral-100 py-8 px-inside">
 				<h2 className="text-center">
 					En Cassiopeia nos comprometemos con el servicio que brindamos
 				</h2>
 				<p className="text-center">Tenemos cualidades que nos distinguen</p>
-
 				<section className="flex gap-8 mt-8 flex-wrap justify-center">
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
@@ -97,11 +104,10 @@ const IndexPage: React.FunctionComponent = () => {
 							</p>
 						</div>
 					</article>
-
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
-								lassName="-translate-y-24"
+								className="-translate-y-24"
 								src="../images/pictures/certificados.JPG"
 								alt=""
 								layout="fullWidth"
@@ -117,7 +123,6 @@ const IndexPage: React.FunctionComponent = () => {
 							</p>
 						</div>
 					</article>
-
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
@@ -136,7 +141,6 @@ const IndexPage: React.FunctionComponent = () => {
 							</p>
 						</div>
 					</article>
-
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
@@ -158,7 +162,6 @@ const IndexPage: React.FunctionComponent = () => {
 					</article>
 				</section>
 			</section>
-
 			<section className="py-8 px-inside flex gap-8 md:items-center justify-center">
 				<StaticImage src="../images/tilesets/device.png" alt="" width={180} />
 				<div className="flex-1 flex flex-col gap-4 max-w-md">
@@ -173,9 +176,7 @@ const IndexPage: React.FunctionComponent = () => {
 						garanticen la seguridad y confiabilidad operativa en las
 						instalaciones y equipos de nuestros clientes.
 					</p>
-
 					<p>La aplicación esta disponible en</p>
-
 					<span className="flex gap-4">
 						<StaticImage
 							class="link shadow cursor-pointer overflow-hidden"

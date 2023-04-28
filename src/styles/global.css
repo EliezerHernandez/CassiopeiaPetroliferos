@@ -78,14 +78,28 @@
 	.input-group {
 		@apply flex flex-col gap-2;
 	}
-
 	.img {
 		@apply overflow-hidden shadow rounded;
+	}
+
+	#main-hero {
+		height: calc(100vh - 131px);
 	}
 
 	@responsive {
 		.text-shadow {
 			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    
+          
+            
+    
+
+          
+          Expand Down
+    
+    
+  
 		}
 		.text-shadow-md {
 			text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
