@@ -61,6 +61,14 @@
 	}
 }
 
+	.hero-container {
+		@apply absolute w-full h-full;
+	}
+
+	.hero-container > * {
+		@apply absolute w-full h-full;
+	}
+
 @layer components {
 	@responsive {
 		.text-shadow {
