@@ -15,6 +15,32 @@
 	h6 {
 		@apply font-bold;
 	}
+
+	.link {
+		transition: filter 0.3s ease;
+		@apply font-bold;
+	}
+
+	.link:hover {
+		filter: brightness(1.2);
+	}
+
+	.link.primary {
+		@apply text-primary-300;
+	}
+
+	.btn {
+		transition: filter 0.3s ease;
+		@apply p-4 font-bold;
+	}
+
+	.btn:hover {
+		filter: brightness(1.2);
+	}
+
+	.btn.primary {
+		@apply bg-primary-300 text-white shadow rounded;
+	}
 }
 
 @layer components {
