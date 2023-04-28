@@ -4,7 +4,7 @@ module.exports = {
 	siteMetadata: {
 		title: 'Cassiopeia Industries',
 		description: 'Lema de la empresa.',
-		image: '/src/images/logocompleto.jpeg',
+		image: 'src/images/logocompleto.jpeg',
 		siteUrl: 'https://www.cassiopeia.com.mx/',
 	},
 	plugins: [
