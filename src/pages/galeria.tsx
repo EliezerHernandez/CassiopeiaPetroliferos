@@ -26,7 +26,7 @@ const GaleriaPage: React.FunctionComponent = () => {
 				}>
 				<h1>Galeria</h1>
 				<p className="text-lg">
-					Contamos con multiples servicios en nuestra empresa.
+					Mira nuestra galeria operativa donde ponemos evidencias de servicio
 				</p>
 			</Hero>
 

@@ -27,7 +27,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 				}>
 				<h1>Servicios</h1>
 				<p className="text-lg">
-					Contamos con multiples servicios en nuestra empresa.
+					Contamos con multiples servicios en nuestra empresa, conoce algunos de ellos
 				</p>
 			</Hero>
 

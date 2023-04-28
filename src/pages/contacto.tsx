@@ -26,7 +26,7 @@ const ContactoPage: React.FunctionComponent = () => {
 				}>
 				<h1>Contacto</h1>
 				<p className="text-lg">
-					Comunicate con nuestro personal y pongamonos en contacto.
+					Comunicate con nuestro personal y cotiza con nosotros	
 				</p>{' '}
 			</Hero>
 
