@@ -1,6 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { Hero } from '../components/common/Hero';
+import SEO from '../components/common/SEO';
 import { Layout } from '../components/layout';
 
 const GaleriaPage: React.FunctionComponent = () => {

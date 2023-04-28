@@ -1,12 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
 	* {
 		font-family: 'Inter';
 	}
-
 	h1,
 	h2,
 	h3,
@@ -18,78 +16,92 @@
 	h1 {
 		@apply text-5xl;
 	}
-
 	h2 {
 		@apply text-4xl;
 	}
-
 	h3 {
 		@apply text-3xl;
 	}
-
 	h4 {
 		@apply text-2xl;
 	}
-
 	h5 {
 		@apply text-xl;
 	}
+
+	input[type='text'],
+	input[type='number'] {
+		@apply border border-neutral-300 rounded p-2;
+	}
+}
+
+@layer components {
 	.link {
 		transition: filter 0.3s ease;
 		@apply font-bold;
 	}
-
 	.link:hover {
 		filter: brightness(1.2);
 	}
-
 	.link.primary {
 		@apply text-primary-300;
 	}
-
 	.btn {
 		transition: filter 0.3s ease;
 		@apply p-4 font-bold;
 	}
-
 	.btn:hover {
 		filter: brightness(1.2);
 	}
-
 	.btn.primary {
 		@apply bg-primary-300 text-white shadow rounded;
 	}
-}
-
 	.hero-container {
 		@apply absolute w-full h-full;
 	}
-
 	.hero-container > * {
 		@apply absolute w-full h-full;
 	}
 
-@layer components {
+	.servicios-item {
+		@apply p-8 px-inside flex gap-8 flex-col sm:flex-row;
+	}
+
+	.servicios-item:nth-child(2n) {
+		@apply bg-neutral-100 flex-row-reverse;
+	}
+
+	.form {
+		@apply flex flex-col gap-8;
+	}
+
+	.form-row {
+		@apply flex gap-8;
+	}
+
+	.form-row .input-group {
+		@apply w-full;
+	}
+
+	.input-group {
+		@apply flex flex-col gap-2;
+	}
+
 	@responsive {
 		.text-shadow {
 			text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 		}
-
 		.text-shadow-md {
 			text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
 		}
-
 		.text-shadow-lg {
 			text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11),
 				0 5px 15px rgba(0, 0, 0, 0.08);
 		}
-
 		.text-shadow-none {
 			text-shadow: none;
 		}
 	}
 }
-
 @layer utilities {
-	
 }

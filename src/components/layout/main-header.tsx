@@ -10,6 +10,7 @@ export const MainHeader: React.FunctionComponent = () => {
 				alt="Cassiopeia Logo"
 				placeholder="tracedSVG"
 				width={255}
+				loading="eager"
 			/>
 
 			<nav className="flex items-center gap-4">
@@ -41,7 +42,9 @@ export const MainHeader: React.FunctionComponent = () => {
 						</Link>
 					</li>
 				</ul>
-				<button className="btn primary">Ingresar</button>
+				<a href="https://cassiopeia.strappberry.com/admin/login">
+					<button className="btn primary">Ingresar</button>
+				</a>
 			</nav>
 		</header>
 	);
