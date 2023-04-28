@@ -7,7 +7,7 @@ export const MainFooter: React.FunctionComponent = () => {
 				<a href="" className="font-bold">
 					Mapa del sitio
 				</a>
-				<a href="" className="font-bold">
+				<a href="/legalidad" className="font-bold">
 					Legalidad
 				</a>
 			</div>
