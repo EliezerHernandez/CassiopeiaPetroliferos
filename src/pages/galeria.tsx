@@ -7,6 +7,8 @@ import { Layout } from '../components/layout';
 const GaleriaPage: React.FunctionComponent = () => {
 	return (
 		<Layout>
+				<SEO title="Galeria | Cassiopeia" />
+
 			<Hero
 				image={
 					<StaticImage
