@@ -7,7 +7,7 @@ import { Layout } from '../components/layout';
 const ContactoPage: React.FunctionComponent = () => {
 	return (
 		<Layout>
-				<SEO title="Contacto | Cassiopeia" />
+			<SEO title="Contacto | Cassiopeia" />
 
 			<Hero
 				image={
@@ -26,11 +26,11 @@ const ContactoPage: React.FunctionComponent = () => {
 				}>
 				<h1>Contacto</h1>
 				<p className="text-lg">
-					Comunicate con nuestro personal y cotiza con nosotros	
+					Comunicate con nuestro personal y cotiza con nosotros
 				</p>{' '}
 			</Hero>
 
-			<section className="py-8 px-inside flex gap-8">
+			<section className="py-8 px-4 lg:px-inside flex gap-8">
 				<div className="flex-1 flex flex-col gap-4">
 					<h2>Información de contacto</h2>
 					<div>

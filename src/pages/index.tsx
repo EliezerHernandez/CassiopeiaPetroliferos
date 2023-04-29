@@ -5,51 +5,40 @@ import { Layout } from '../components/layout';
 
 //@ts-ignore
 import heroVideo from '../assets/main-hero-vid.mp4';
+import { Hero } from '../components/common/Hero';
+import { Link } from 'gatsby';
 
 const IndexPage: React.FunctionComponent = () => {
 	return (
 		<Layout>
 			<SEO title="Inicio | Cassiopeia" />
-
-			<section id="main-hero" className="bg-primary-400 grid relative">
-				<div className="overflow-hidden absolute w-full h-full">
-					<video
-						autoPlay
-						loop
-						muted
-						className="absolute w-full translate-y-[-22rem]">
-						<source src={heroVideo} type="video/mp4" />
-						no sencontro video
-					</video>
-				</div>
-
-				<div
-					className=" bg-primary-400/50 
-					flex flex-col items-center p-8 gap-8
-					col-span-full row-span-full z-10 
-				">
+			<Hero
+				image={
 					<StaticImage
-						className="text-shadow-lg"
-						src="../images/tilesets/logo-white.png"
-						alt="Cassiopeia"
-						placeholder="tracedSVG"
-						width={500}
+						src="../images/wallpapers/caminosoleado.JPG"
+						alt=""
+						placeholder="blurred"
+						transformOptions={{
+							duotone: {
+								highlight: '#8B94E1',
+								shadow: '#242B71',
+								opacity: 80,
+							},
+						}}
 					/>
-					<div className="flex flex-col gap-4 text-center items-center px-inside text-white text-shadow-lg">
-						<h1>Empresa 100% Mexicana</h1>
-						<p className="text-lg">
-							Dedicados a la comercialización de petrolíferos a nivel nacional a
-							precios competitivos.
-							<br />
-							Comprometidos a suministrar combustibles de calidad certificada,
-							que garanticen la seguridad y confiabilidad operativa en las
-							instalaciones y equipos de nuestros clientes.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section className="py-8 px-inside flex gap-8 flex-col md:flex-row">
+				}>
+				<h1 className="sm:text-6xl">Somos una empresa 100% Mexicana</h1>
+				<p className="sm:text-xl">
+					Dedicados a la comercialización de petrolíferos a nivel nacional a
+					precios competitivos. Comprometidos a suministrar combustibles de
+					calidad certificada, que garanticen la seguridad y confiabilidad
+					operativa en las instalaciones y equipos de nuestros clientes.
+				</p>
+				<Link to="/servicios" className="btn secondary">
+					Ver nuestros servicios
+				</Link>
+			</Hero>
+			<section className="py-8 px-4 lg:px-inside flex gap-8 flex-col md:flex-row">
 				<div className="flex flex-col gap-8">
 					<div>
 						<h2>Contamos con cobertura nacional</h2>
@@ -80,11 +69,13 @@ const IndexPage: React.FunctionComponent = () => {
 					aspectRatio={738 / 499}
 				/>
 			</section>
-			<section className="bg-neutral-100 py-8 px-inside">
+
+			<section className="bg-neutral-100 py-8 px-4 lg:px-inside">
 				<h2 className="text-center">
 					En Cassiopeia nos comprometemos con el servicio que brindamos
 				</h2>
 				<p className="text-center">Tenemos cualidades que nos distinguen</p>
+
 				<section className="flex gap-8 mt-8 flex-wrap justify-center">
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
@@ -104,6 +95,7 @@ const IndexPage: React.FunctionComponent = () => {
 							</p>
 						</div>
 					</article>
+
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
@@ -123,6 +115,7 @@ const IndexPage: React.FunctionComponent = () => {
 							</p>
 						</div>
 					</article>
+
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
@@ -141,6 +134,7 @@ const IndexPage: React.FunctionComponent = () => {
 							</p>
 						</div>
 					</article>
+
 					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
@@ -162,9 +156,16 @@ const IndexPage: React.FunctionComponent = () => {
 					</article>
 				</section>
 			</section>
-			<section className="py-8 px-inside flex gap-8 md:items-center justify-center">
-				<StaticImage src="../images/tilesets/device.png" alt="" width={180} />
-				<div className="flex-1 flex flex-col gap-4 max-w-md">
+
+			<section className="py-8 px-4 lg:px-inside flex flex-col md:flex-row gap-8 md:items-center justify-center">
+				<StaticImage
+					className="mx-auto md:mx-0"
+					src="../images/tilesets/device.png"
+					alt=""
+					width={180}
+					layout="fixed"
+				/>
+				<div className="mx-auto md:mx-0 flex-1 flex flex-col gap-4 max-w-md">
 					<h2>Descarga nuestra app!</h2>
 					<p className="font-bold">Bienvenido a Cassiopeia</p>
 					<p>
@@ -176,8 +177,10 @@ const IndexPage: React.FunctionComponent = () => {
 						garanticen la seguridad y confiabilidad operativa en las
 						instalaciones y equipos de nuestros clientes.
 					</p>
+
 					<p>La aplicación esta disponible en</p>
-					<span className="flex gap-4">
+
+					<span className="flex gap-4 flex-wrap justify-center md:justify-start">
 						<StaticImage
 							class="link shadow cursor-pointer overflow-hidden"
 							src="../images/tilesets/googleplay-btn.png"
@@ -198,4 +201,5 @@ const IndexPage: React.FunctionComponent = () => {
 		</Layout>
 	);
 };
+
 export default IndexPage;

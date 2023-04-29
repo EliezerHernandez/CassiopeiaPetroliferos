@@ -11,7 +11,7 @@ export const Hero: React.FunctionComponent<Props> = ({ image, children }) => {
 			<div className="hero-container">{image}</div>
 
 			<div className="flex flex-col gap-20 items-center p-8 col-span-full row-span-full z-10">
-				<div className="flex flex-col gap-4 text-center items-center px-inside text-white text-shadow">
+				<div className="flex flex-col gap-4 py-8 text-center items-center px-inside text-white text-shadow">
 					{children}
 				</div>
 			</div>
