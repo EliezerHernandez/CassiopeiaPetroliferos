@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export const MainHeader: React.FunctionComponent = () => {
 	return (
-		<header className="pt-4 pb-8 px-inside shadow-lg flex items-end justify-between">
+		<header className="pt-4 pb-8 px-4 lg:px-inside shadow-lg flex flex-col items-center gap-8 md:items-end md:flex-row md:justify-between">
 			<StaticImage
 				src="../../images/tilesets/logo.png"
 				alt="Cassiopeia Logo"
@@ -13,8 +13,8 @@ export const MainHeader: React.FunctionComponent = () => {
 				loading="eager"
 			/>
 
-			<nav className="flex items-center gap-4">
-				<ul className="flex gap-4">
+			<nav className="flex items-center gap-4 justify-center flex-wrap">
+				<ul className="flex gap-4 justify-center">
 					<li>
 						<Link to="/" className="link" activeClassName="link primary">
 							Inicio

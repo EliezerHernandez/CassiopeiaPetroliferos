@@ -8,7 +8,7 @@ const LegalidadPage: React.FunctionComponent = () => {
 		<Layout>
 			<SEO title="Legalidad | Cassiopeia" />
 
-			<section className="py-8 px-inside text-center flex flex-col gap-4">
+			<section className="py-8 px-4 lg:px-inside text-center flex flex-col gap-4">
 				<h1>Legalidad</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
@@ -17,7 +17,7 @@ const LegalidadPage: React.FunctionComponent = () => {
 				</p>
 			</section>
 
-			<section className="bg-neutral-100 py-8 px-inside flex flex-col gap-8">
+			<section className="bg-neutral-100 py-8 px-4 lg:px-inside flex flex-col gap-8">
 				{[...Array(10)].map((_) => (
 					<AccordeonItem title="Lorem ipsum dolor sit amet">
 						<h2>Lorem ipsum</h2>

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { StaticImage } from 'gatsby-plugin-image';
 import { MainFooter } from './main-footer';
 import { MainHeader } from './main-header';
 
