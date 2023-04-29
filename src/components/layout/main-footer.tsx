@@ -1,17 +1,96 @@
 import * as React from 'react';
 
 export const MainFooter: React.FunctionComponent = () => {
+	const [showAvisoPrivacidad, setShowAvisoPrivacidad] = React.useState(false);
+
+	const openAvisoPrivacidad = () => setShowAvisoPrivacidad(true);
+	const closeAvisoPrivacidad = () => setShowAvisoPrivacidad(false);
+
 	return (
-		<footer className="p-8 px-4 lg:px-inside bg-primary-400 text-white flex flex-col gap-4 text-center sm:text-left">
-		<div className="flex gap-8 flex-wrap justify-center sm:justify-start">
-				<a href="" className="font-bold">
-					Mapa del sitio
-				</a>
-				<a href="/legalidad" className="font-bold">
-					Legalidad
-				</a>
-			</div>
-			<p>Derechos reservados Cassiopeia Industries S.A de C.V.</p>
-		</footer>
+		<>
+			{showAvisoPrivacidad && (
+				<div className="fixed bg-black/50 left-0 right-0 top-0 bottom-0 z-20 py-8 px-4">
+					<div className="md:max-w-lg flex flex-col gap-8 p-4 rounded shadow bg-white mx-auto h-5/6 overflow-y-scroll">
+						<button
+							className="font-bold text-neutral-700 self-end"
+							onClick={closeAvisoPrivacidad}>
+							Cerrar ventana
+						</button>
+
+						<div>
+							<h2>Aviso de privacidad</h2>
+							<p>
+								A los Usuarios (como se definen posteriormente), les informamos
+								que el siguiente Aviso de Privacidad, les es aplicable por el
+								simple uso o acceso a cualquiera de las páginas, aplicaciones
+								web y móviles, softwares y, aplicaciones en general, que
+								integran el Portal de www.cassiopeia.com.mx (en adelante y,
+								conjunta e indistintamente, el "Portal"), por lo que
+								entenderemos que lo acepta y acuerda en obligarse en su
+								cumplimiento.
+							</p>
+						</div>
+						<div>
+							<h3>RESPONSABLE DEL TRATAMIENTO DE SUS DATOS PERSONALES</h3>
+							<p>
+								Para Cassiopeia (en adelante la “Empresa”) la seguridad de los
+								Usuarios es nuestra prioridad, por lo que protegemos sus datos
+								personales mediante el uso, aplicación y mantenimiento de altas
+								medidas de seguridad técnicas, físicas y administrativas.
+							</p>
+						</div>
+						<div>
+							<h3>DOMICILIO DEL RESPONSABLE</h3>
+							<p>
+								Para efectos del presente aviso de privacidad, la Empresa
+								señala, individualmente, como su domicilio, el ubicado en
+								Sinaloa #195, Roma Nte., CP: 06700, Cuauhtémoc, Ciudad de
+								México"
+							</p>
+						</div>
+						<div>
+							<h3>DATOS PERSONALES QUE PUEDEN SER RECOLECTADOS</h3>
+							<p>
+								{' '}
+								Los datos personales que la Empresa puede recopilar del Usuario
+								al utilizar el Portal y/o contratar nuestros servicios y
+								productos, son los siguientes: Teléfono Correo Electrónico
+							</p>
+						</div>
+						<div>
+							<h3>FINALIDADES DEL TRATAMIENTO DE SUS DATOS PERSONALES</h3>
+							<p>
+								Los datos personales que la Empresa recabe serán utilizados para
+								atender las siguientes finalidades: Establecer comunicación
+								Ofrecer nuestros servicios
+							</p>
+						</div>
+						<div>
+							<h3>
+								MEDIOS PARA EJERCER LOS DERECHOS DE ACCESO, RECTIFICACIÓN,
+								CANCELACIÓN U OPOSICIÓN (DERECHOS ARCO)
+							</h3>
+							<p>
+								Puede enviar un correo electrónico a ventas@cassiopeia.com.mx,
+								en cualquier momento, para ejercer sus Derechos de Acceso,
+								Rectificación, Cancelación u Oposición (“Derechos ARCO”).
+							</p>
+						</div>
+					</div>
+				</div>
+			)}
+
+			<footer className="p-8 px-4 lg:px-inside bg-primary-400 text-white flex flex-col gap-4 text-center sm:text-left">
+				<div className="flex gap-8 flex-wrap justify-center sm:justify-start">
+					<button className="font-bold" onClick={openAvisoPrivacidad}>
+						Aviso de privacidad
+					</button>
+					{/* <a href="/legalidad" className="font-bold">
+						Legalidad
+					</a> */}
+				</div>
+				<p>Derechos reservados Cassiopeia Industries S.A de C.V.</p>
+			</footer>
+		</>
 	);
 };

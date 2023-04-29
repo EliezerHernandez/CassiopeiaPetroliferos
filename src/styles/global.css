@@ -85,6 +85,10 @@
 		@apply p-8 px-4 lg:px-inside flex gap-8 flex-col sm:flex-row;
 	}
 
+	.servicios-item > div {
+		@apply flex gap-4 flex-col;
+	}
+	
 	.servicios-item:nth-child(2n) {
 		@apply bg-neutral-100 sm:flex-row-reverse;
 	}

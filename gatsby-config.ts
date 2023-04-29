@@ -3,7 +3,8 @@ import { config } from "process";
 module.exports = {
 	siteMetadata: {
 		title: 'Cassiopeia Industries',
-		description: 'Lema de la empresa.',
+		description:
+			'Dedicados a la comercialización de petrolíferos a nivel nacional a precios competitivos. Comprometidos a suministrar combustibles de calidad certificada, que garanticen la seguridad y confiabilidad operativa en las instalaciones y equipos de nuestros clientes.',
 		image: 'src/images/logocompleto.jpeg',
 		siteUrl: 'https://www.cassiopeia.com.mx/',
 	},
