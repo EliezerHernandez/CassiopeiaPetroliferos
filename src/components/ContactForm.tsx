@@ -111,7 +111,12 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 
 			<div className="input-group">
 				<label>Descripción/Detalles</label>
-				<textarea rows={5} name="descripcion_contacto" required></textarea>
+				<textarea
+					rows={5}
+					name="descripcion_contacto"
+					maxLength={300}
+					required></textarea>
+				<p className="text-xs text-neutral-700">Escriba en 300 caracteres</p>
 			</div>
 
 			{msgStatus == 1 ? (

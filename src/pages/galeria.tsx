@@ -1,10 +1,10 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { getImage, StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
-import { Gallery } from '../components/common/Gallery';
 import { Hero } from '../components/common/Hero';
 import SEO from '../components/common/SEO';
 import { Layout } from '../components/layout';
+import Gallery from '@browniebroke/gatsby-image-gallery';
 
 const GaleriaPage: React.FunctionComponent = () => {
 	const imageQuery = useStaticQuery(graphql`
@@ -32,6 +32,7 @@ const GaleriaPage: React.FunctionComponent = () => {
 	return (
 		<Layout>
 			<SEO title="Galeria | Cassiopeia" />
+
 			<Hero
 				image={
 					<StaticImage
@@ -53,10 +54,24 @@ const GaleriaPage: React.FunctionComponent = () => {
 				</p>
 			</Hero>
 
-			<section className="py-8 px-inside flex flex-wrap justify-center gap-4">
-				<Gallery images={images} imageClass="img cursor-pointer" />
+			<section className="py-8 px-4 lg:px-inside flex flex-wrap justify-center gap-4">
+				<Gallery images={images} customWrapper={imgWrapper} />
 			</section>
 		</Layout>
 	);
 };
+
+interface wrapperProps {
+	[x: string]: any;
+}
+
+const imgWrapper: React.FunctionComponent<wrapperProps> = ({
+	children,
+	onClick,
+}) => (
+	<div className="img-gallery" onClick={onClick}>
+		{children}
+	</div>
+);
+
 export default GaleriaPage;

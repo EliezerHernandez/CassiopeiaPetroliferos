@@ -124,7 +124,8 @@
 		@apply flex flex-col gap-2;
 	}
 
-	.img {
+	.img-gallery {
+		@apply overflow-hidden shadow rounded w-[calc(33%-0.5rem)] sm:w-[calc(25%-0.5rem)] m-1 cursor-pointer;
 		@apply overflow-hidden shadow rounded;
 	}
 

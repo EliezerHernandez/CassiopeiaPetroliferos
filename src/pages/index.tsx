@@ -43,7 +43,7 @@ const IndexPage: React.FunctionComponent = () => {
 					<div>
 						<h2>Contamos con cobertura nacional</h2>
 						<p>
-						Estamos disponibles en los siguientes estados de la república.
+							Estamos disponibles en los siguientes estados de la república.
 						</p>
 					</div>
 					<div className="flex gap-8">
@@ -53,12 +53,15 @@ const IndexPage: React.FunctionComponent = () => {
 							<li>Estado de México</li>
 							<li>Nuevo León</li>
 							<li>Puebla</li>
+							<li>Tabasco</li>
 						</ul>
 						<ul>
 							<li>Querétaro</li>
 							<li>San Luis Potosí</li>
 							<li>Tamaulipas</li>
 							<li>Veracruz</li>
+							<li>Colima</li>
+							<li>Durango</li>
 						</ul>
 					</div>
 				</div>
@@ -88,10 +91,9 @@ const IndexPage: React.FunctionComponent = () => {
 						<div className="p-4 flex flex-col gap-4">
 							<h3>Comprometidos con la calidad operativa</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-								excepturi quis ex? Provident expedita veritatis fugit harum sunt
-								delectus quasi asperiores voluptate quis voluptatibus excepturi
-								et, sit exercitationem odit vel?
+								Capacitación constante a todos nuestros operadores bajo los
+								controles de calidad NOM y Procedimientos de descarga en
+								Estaciones de Servicio.
 							</p>
 						</div>
 					</article>
@@ -108,10 +110,8 @@ const IndexPage: React.FunctionComponent = () => {
 						<div className="p-4 flex flex-col gap-4">
 							<h3>Combustibles de calidad certificada</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-								excepturi quis ex? Provident expedita veritatis fugit harum sunt
-								delectus quasi asperiores voluptate quis voluptatibus excepturi
-								et, sit exercitationem odit vel?
+								Suministro de Combustible de alta calidad bajo estándares de
+								calidad de comercialización.
 							</p>
 						</div>
 					</article>
@@ -127,10 +127,9 @@ const IndexPage: React.FunctionComponent = () => {
 						<div className="p-4 flex flex-col gap-4">
 							<h3>Somos distribuidores de PEMEX</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-								excepturi quis ex? Provident expedita veritatis fugit harum sunt
-								delectus quasi asperiores voluptate quis voluptatibus excepturi
-								et, sit exercitationem odit vel?
+								Al ser distribuidores autorizados de PEMEX, nos comprometemos a
+								respetar todos los procesos y lineamientos para que la carga y
+								descarga sea transparente y puntual con nuestros clientes.
 							</p>
 						</div>
 					</article>
@@ -147,10 +146,10 @@ const IndexPage: React.FunctionComponent = () => {
 						<div className="p-4 flex flex-col gap-4">
 							<h3>Atención 24/7 los 365 dias del año</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
-								excepturi quis ex? Provident expedita veritatis fugit harum sunt
-								delectus quasi asperiores voluptate quis voluptatibus excepturi
-								et, sit exercitationem odit vel?
+								Nuestro equipo está preparado para atender todas tus dudas,
+								logística y lineamientos necesarios para efectuar el viaje y
+								descarga en todo momento, además de poner a tu disposicion
+								nuestras cuentas de monitoreo satelital.
 							</p>
 						</div>
 					</article>
@@ -162,23 +161,36 @@ const IndexPage: React.FunctionComponent = () => {
 					className="mx-auto md:mx-0"
 					src="../images/tilesets/device.png"
 					alt=""
-					width={180}
+					width={300}
 					layout="fixed"
 				/>
 				<div className="mx-auto md:mx-0 flex-1 flex flex-col gap-4 max-w-md">
 					<h2>Descarga nuestra app!</h2>
 					<p className="font-bold">Bienvenido a Cassiopeia</p>
 					<p>
-						Dedicados a la comercialización de petrolífero a nivel nacional a
-						precios competitivos.
+						Este 2022 iniciamos con nuestra nueva aplicación desde la cual
+						podrás:
 					</p>
-					<p>
-						Comprometidos a suministrar combustibles de calidad certificada, que
-						garanticen la seguridad y confiabilidad operativa en las
-						instalaciones y equipos de nuestros clientes.
-					</p>
+					<ul className="list-disc ml-5 text-primary-300 flex flex-col gap-2">
+						<li>Dar de alta tus estaciones y cantidad de almacenamiento</li>
+						<li>Recibir atención personalizada 24/7</li>
+						<li>
+							Recibir tu oferta de compra y firma la documentación
+							correspondiente
+						</li>
+						<li>Recibir nuestras mejores tarifas</li>
+						<li>Comunicarte de forma segura con nosotros</li>
+						<li>
+							Seguir envíos: siempre podrás saber en dónde está tu producto y
+							liuándo llega
+						</li>
+						<li>Gestiona tus ordenes e historial de compras</li>
+						<li>Gestión de toda tu documentación</li>
+					</ul>
 
-					<p>La aplicación esta disponible en</p>
+					<p className="mt-4 font-bold text-sm text-neutral-700">
+						La aplicación esta disponible en:
+					</p>
 
 					<span className="flex gap-4 flex-wrap justify-center md:justify-start">
 						<StaticImage

@@ -12,6 +12,7 @@ export const MainHeader: React.FunctionComponent = () => {
 	return (
 		<header className="pt-4 pb-8 px-4 lg:px-inside shadow-lg flex flex-col items-center gap-8 md:items-end md:flex-row md:justify-between">
 			<StaticImage
+				className="-ml-2"
 				src="../../images/tilesets/logo.png"
 				alt="Cassiopeia Logo"
 				placeholder="tracedSVG"
@@ -19,9 +20,9 @@ export const MainHeader: React.FunctionComponent = () => {
 				loading="eager"
 			/>
 
-			<div className="absolute left-4 top-[65px] -translate-y-1/2 md:hidden">
+			<div className="absolute right-4 top-4 md:hidden">
 				<button
-					className="text-2xl font-bold text-neutral-700 bg-white p-2 border-2 rounded w-12 h-12 text-center flex justify-center items-center"
+					className="text-2xl font-bold text-neutral-700 bg-white p-2 border-2 rounded w-10 h-10 text-center flex justify-center items-center"
 					onClick={openMenu}>
 					☰
 				</button>
@@ -33,7 +34,7 @@ export const MainHeader: React.FunctionComponent = () => {
 						<header className="flex justify-between w-full items-center">
 							<h2>Enlaces</h2>
 							<button
-								className="text-2xl font-bold text-neutral-700 bg-white p-2 border-2 rounded w-12 h-12 text-center flex justify-center items-center"
+								className="text-2xl font-bold text-neutral-700 bg-white p-2 border-2 rounded w-10 h-10 text-center flex justify-center items-center"
 								onClick={closeMenu}>
 								✕
 							</button>
