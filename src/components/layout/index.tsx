@@ -1,45 +1,66 @@
 import * as React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import { MainFooter } from './main-footer';
 import { MainHeader } from './main-header';
 
 export const Layout: React.FunctionComponent = ({ children }) => {
+	const [fadeableItems, setFadeableItems] = React.useState<Element[]>([]);
+
+	// This function is not mine, is an implementation of Tieme's response on this post: https://stackoverflow.com/questions/5598743/finding-elements-position-relative-to-the-document
+
+	const getYPosition = (elem: Element) => {
+		let { top } = elem.getBoundingClientRect();
+		let scrollTop =
+			window.pageYOffset ||
+			document.documentElement.scrollTop ||
+			document.body.scrollTop;
+		let clientTop =
+			document.documentElement.clientTop || document.body.clientTop || 0;
+
+		return Math.round(top + scrollTop - clientTop);
+	};
+
+	const updateElements = (
+		elements: {
+			element: Element;
+			position: number;
+		}[],
+		scroll_pos: number
+	) => {
+		let fadein_offset = (window.innerHeight * 3) / 4;
+		let newElements = [];
+
+		for (let elem of elements) {
+			let elementInViewport =
+				elem.position < scroll_pos + fadein_offset &&
+				elem.position > scroll_pos - fadein_offset / 4;
+			if (elementInViewport) {
+				elem.element.classList.add('fadein');
+			} else {
+				newElements.push(elem);
+			}
+		}
+
+		return newElements;
+	};
+
+	React.useEffect(() => {
+		let elements = Array.from(document.querySelectorAll('.fadeable')).map(
+			(elem) => ({ element: elem, position: getYPosition(elem) })
+		);
+		let last_scroll_pos = window.scrollY;
+		elements = updateElements(elements, last_scroll_pos);
+
+		window.addEventListener('scroll', (e) => {
+			last_scroll_pos = window.scrollY;
+			elements = updateElements(elements, last_scroll_pos);
+		});
+	}, []);
+
 	return (
-		<Layout>
-						<section className="bg-primary-400 grid relative">
-				<StaticImage
-					className="absolute w-full h-full "
-					src="../images/wallpapers/caminosoleado.JPG"
-					alt="Banner"
-					placeholder="blurred"
-					transformOptions={{
-						duotone: {
-							highlight: '#8B94E1',
-							shadow: '#242B71',
-							opacity: 80,
-						},
-					}}
-				/>
-				<div className="flex flex-col gap-20 items-center p-8 col-span-full row-span-full z-10">
-					<div className="flex flex-col gap-4 text-center items-center px-inside text-white text-shadow">
-						<h1>Empresa 100% Mexicana</h1>
-						<p className="text-lg">
-							Dedicados a la comercialización de petrolíferos a nivel nacional a
-							precios competitivos.
-							<br />
-							Comprometidos a suministrar combustibles de calidad certificada,
-							que garanticen la seguridad y confiabilidad operativa en las
-							instalaciones y equipos de nuestros clientes.
-						</p>
-					</div>
-					<div className="flex gap-2">
-						<div className="bg-white border-2 border-white rounded-full h-4 w-4"></div>
-						<div className="border-2 border-white rounded-full h-4 w-4"></div>
-						<div className="border-2 border-white rounded-full h-4 w-4"></div>
-					</div>
-				</div>
-			</section>
-			<section className=""></section>
-		</Layout>
+		<>
+			<MainHeader />
+			<main>{children}</main>
+			<MainFooter />
+		</>
 	);
 };

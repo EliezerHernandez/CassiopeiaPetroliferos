@@ -126,11 +126,19 @@
 
 	.img-gallery {
 		@apply overflow-hidden shadow rounded w-[calc(33%-0.5rem)] sm:w-[calc(25%-0.5rem)] m-1 cursor-pointer;
-		@apply overflow-hidden shadow rounded;
 	}
 
 	#main-hero {
 		height: calc(100vh - 131px - 4rem);
+	}
+
+	.fadeable {
+		transition: opacity 1s ease, transform 1s ease;
+		@apply opacity-0 -translate-y-8;
+	}
+
+	.fadein {
+		@apply opacity-100 translate-y-0;
 	}
 
 	@responsive {

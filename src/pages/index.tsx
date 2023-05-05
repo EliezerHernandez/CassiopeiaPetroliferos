@@ -38,7 +38,7 @@ const IndexPage: React.FunctionComponent = () => {
 					Ver nuestros servicios
 				</Link>
 			</Hero>
-			<section className="py-8 px-4 lg:px-inside flex gap-8 flex-col md:flex-row">
+			<section className="fadeable py-8 px-4 lg:px-inside flex gap-8 flex-col md:flex-row">
 				<div className="flex flex-col gap-8">
 					<div>
 						<h2>Contamos con cobertura nacional</h2>
@@ -73,14 +73,14 @@ const IndexPage: React.FunctionComponent = () => {
 				/>
 			</section>
 
-			<section className="bg-neutral-100 py-8 px-4 lg:px-inside">
+			<section className=" bg-neutral-100 py-8 px-4 lg:px-inside">
 				<h2 className="text-center">
 					En Cassiopeia nos comprometemos con el servicio que brindamos
 				</h2>
 				<p className="text-center">Tenemos cualidades que nos distinguen</p>
 
 				<section className="flex gap-8 mt-8 flex-wrap justify-center">
-					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
+					<article className="fadeable rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
 								src="../images/pictures/calidad-operativa.png"
@@ -98,7 +98,7 @@ const IndexPage: React.FunctionComponent = () => {
 						</div>
 					</article>
 
-					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
+					<article className="fadeable rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
 								className="-translate-y-24"
@@ -116,7 +116,7 @@ const IndexPage: React.FunctionComponent = () => {
 						</div>
 					</article>
 
-					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
+					<article className="fadeable rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
 								src="../images/pictures/distribuidor-pemex.png"
@@ -134,7 +134,7 @@ const IndexPage: React.FunctionComponent = () => {
 						</div>
 					</article>
 
-					<article className="rounded shadow max-w-sm overflow-hidden bg-white">
+					<article className="fadeable rounded shadow max-w-sm overflow-hidden bg-white">
 						<div className="h-40 overflow-hidden">
 							<StaticImage
 								className="-translate-y-8"
@@ -158,13 +158,13 @@ const IndexPage: React.FunctionComponent = () => {
 
 			<section className="py-8 px-4 lg:px-inside flex flex-col md:flex-row gap-8 md:items-center justify-center">
 				<StaticImage
-					className="mx-auto md:mx-0"
+					className="fadeable mx-auto md:mx-0"
 					src="../images/tilesets/device.png"
 					alt=""
 					width={300}
 					layout="fixed"
 				/>
-				<div className="mx-auto md:mx-0 flex-1 flex flex-col gap-4 max-w-md">
+				<div className="fadeable mx-auto md:mx-0 flex-1 flex flex-col gap-4 max-w-md">
 					<h2>Descarga nuestra app!</h2>
 					<p className="font-bold">Bienvenido a Cassiopeia</p>
 					<p>
@@ -194,14 +194,14 @@ const IndexPage: React.FunctionComponent = () => {
 
 					<span className="flex gap-4 flex-wrap justify-center md:justify-start">
 						<StaticImage
-							class="link shadow cursor-pointer overflow-hidden"
+							className="link shadow cursor-pointer overflow-hidden"
 							src="../images/tilesets/googleplay-btn.png"
 							alt=""
 							width={200}
 							placeholder="blurred"
 						/>
 						<StaticImage
-							class="link shadow cursor-pointer overflow-hidden"
+							className="link shadow cursor-pointer overflow-hidden"
 							src="../images/tilesets/applestore-btn.png"
 							alt=""
 							width={200}
