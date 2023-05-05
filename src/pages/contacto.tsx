@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { Hero } from '../components/common/Hero';
 import SEO from '../components/common/SEO';
+import { ContactForm } from '../components/ContactForm';
 import { Layout } from '../components/layout';
 
 const ContactoPage: React.FunctionComponent = () => {
@@ -57,13 +58,15 @@ const ContactoPage: React.FunctionComponent = () => {
 				/>
 			</section>
 
-			<section className="bg-neutral-100 py-8 px-inside">
+			<section className="bg-neutral-100 py-8 px-4 lg:px-inside">
 				<article className="p-8 w-full bg-white rounded shadow">
 					<h2>Cotiza con nosotros</h2>
 					<p>
 						Haznos saber tu situación en el formulario y te atendemos en la
 						brevedad
 					</p>
+
+					<ContactForm />
 				</article>
 			</section>
 		</Layout>

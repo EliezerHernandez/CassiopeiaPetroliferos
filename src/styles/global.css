@@ -37,12 +37,14 @@
 	}
 
 	input[type='text'],
-	input[type='number'] {
+	input[type='number'],
+	input[type='mail'],
+	textarea {
 		@apply border border-neutral-300 rounded p-2;
 	}
 
 	select {
-		@apply border border-neutral-300 rounded p-2 bg-neutral-200;
+		@apply border border-neutral-300 rounded p-2 bg-neutral-100;
 	}
 
 	option {
