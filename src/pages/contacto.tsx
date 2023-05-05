@@ -64,32 +64,6 @@ const ContactoPage: React.FunctionComponent = () => {
 						Haznos saber tu situación en el formulario y te atendemos en la
 						brevedad
 					</p>
-
-					<form action="" className="mt-8 form">
-						<div className="input-group">
-							<label>Campo</label>
-							<input type="text" />
-						</div>
-
-						<div className="input-group">
-							<label>Campo</label>
-							<input type="text" />
-						</div>
-
-						<div className="form-row">
-							<div className="input-group">
-								<label>Campo</label>
-								<input type="text" />
-							</div>
-
-							<div className="input-group">
-								<label>Campo</label>
-								<input type="text" />
-							</div>
-						</div>
-
-						<button className="btn primary">Enviar mensaje</button>
-					</form>
 				</article>
 			</section>
 		</Layout>

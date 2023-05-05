@@ -16,6 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "gatsby": "^5.9.0",
     "gatsby-plugin-google-analytics": "^5.9.0",
     "gatsby-plugin-image": "^3.9.0",

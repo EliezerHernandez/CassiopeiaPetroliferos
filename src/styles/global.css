@@ -40,6 +40,18 @@
 	input[type='number'] {
 		@apply border border-neutral-300 rounded p-2;
 	}
+
+	select {
+		@apply border border-neutral-300 rounded p-2 bg-neutral-200;
+	}
+
+	option {
+		@apply bg-white;
+	}
+
+	option:hover {
+		@apply bg-primary-300;
+	}
 }
 
 @layer components {
@@ -88,7 +100,7 @@
 	.servicios-item > div {
 		@apply flex gap-4 flex-col;
 	}
-	
+
 	.servicios-item:nth-child(2n) {
 		@apply bg-neutral-100 sm:flex-row-reverse;
 	}
