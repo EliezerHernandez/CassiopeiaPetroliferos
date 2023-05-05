@@ -1,4 +1,7 @@
 node_modules/
 .cache/
 # public
-src/gatsby-types.d.ts
+public
+.env
+src/images
+src/gallery
