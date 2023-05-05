@@ -63,10 +63,10 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 					<input
 						type="tel"
 						name="telefono_usuario"
-						pattern="[0-9]{2,3} [0-9]{3} [0-9]{4}"
+						pattern="[0-9]{2,3}-[0-9]{3}-[0-9]{4}"
 					/>
 					<p className="text-xs text-neutral-700">
-						Ingresa un telefono (xxx) xxx xxxx
+						Ingresa un telefono xxx-xxx-xxxx
 					</p>
 				</div>
 			</div>
