@@ -9,11 +9,25 @@ module.exports = {
 		title: 'Cassiopeia Industries',
 		description:
 			'Dedicados a la comercialización de petrolíferos a nivel nacional a precios competitivos. Comprometidos a suministrar combustibles de calidad certificada, que garanticen la seguridad y confiabilidad operativa en las instalaciones y equipos de nuestros clientes.',
-		image: 'src/images/logocompleto.jpeg',
+			image: 'src/images/social-card.png',
 		siteUrl,
 		social: {
 			twitter: 'cassiopeiapf',
 		},
+		keywords: [
+			'Petrolifers',
+			'Petroleo',
+			'Petrolium',
+			'Transport',
+			'Combustible',
+			'Combustolio',
+			'Oil',
+			'Security',
+			'Company',
+			'Industria',
+			'Industrial',
+			'Industry',
+		],
 	},
 	plugins: [
 		'gatsby-plugin-postcss',

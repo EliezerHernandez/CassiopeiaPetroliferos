@@ -8,6 +8,10 @@ interface Metadata {
 	description: string;
 	siteUrl: string;
 	image: string;
+	social: {
+		twitter: string;
+	};
+	keywords: string[];
 }
 
 interface Query {
@@ -19,10 +23,9 @@ interface Query {
 const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 	title,
 	description,
-	siteUrl,
 	image,
+	keywords,
 }) => {
-	const { pathname } = useLocation();
 	const {
 		site: { siteMetadata },
 	}: Query = useStaticQuery(graphql`
@@ -33,6 +36,10 @@ const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 					description
 					siteUrl
 					image
+					social {
+						twitter
+					}
+					keywords
 				}
 			}
 		}
@@ -43,13 +50,19 @@ const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 		description: defaultDescription,
 		siteUrl: url,
 		image: defaultImage,
+		keywords: defaultKeywords,
+		social: { twitter: defaultTwitterCreator },
 	} = siteMetadata;
+
+	const pathname = useLocation();
 
 	const seo = {
 		title: title || defaultTitle,
 		description: description || defaultDescription,
 		image: `${url}${image || defaultImage}`,
 		url: `${url}${pathname}`,
+		keywords: keywords || defaultKeywords,
+		twitter: defaultTwitterCreator,
 	};
 
 	return (
@@ -57,21 +70,59 @@ const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 			title={seo.title}
 			htmlAttributes={{
 				lang: 'es',
-			}}>
-			<meta name="description" content={seo.description} />
-			<meta name="image" content={seo.image} />
-			{seo.url && <meta property="og:url" content={seo.url} />}
-			{seo.title && <meta property="og:title" content={seo.title} />}
-			{seo.description && (
-				<meta property="og:description" content={seo.description} />
-			)}
-			{seo.image && <meta property="og:image" content={seo.image} />}
-			{seo.title && <meta name="twitter:title" content={seo.title} />}
-			{seo.description && (
-				<meta name="twitter:description" content={seo.description} />
-			)}
-			{seo.image && <meta name="twitter:image" content={seo.image} />}
-		</Helmet>
+			}}
+			meta={[
+				{
+					name: `description`,
+					content: seo.description,
+				},
+				{
+					name: 'keywords',
+					content: seo.keywords.join(','),
+				},
+				{
+					property: `og:title`,
+					content: seo.title,
+				},
+				{
+					property: `og:description`,
+					content: seo.description,
+				},
+				{
+					property: `og:type`,
+					content: `website`,
+				},
+				{
+					name: `twitter:creator`,
+					content: `@${seo.twitter}`,
+				},
+				{
+					name: `twitter:title`,
+					content: seo.title,
+				},
+				{
+					name: `twitter:description`,
+					content: seo.description,
+				},
+			].concat(
+				seo.image
+					? [
+							{
+								property: 'og:image',
+								content: seo.image,
+							},
+							{
+								name: 'twitter:card',
+								content: 'summary_large_image',
+							},
+					  ]
+					: [
+							{
+								name: 'twitter:card',
+								content: 'summary',
+							},
+					  ]
+			)}></Helmet>
 	);
 };
 
