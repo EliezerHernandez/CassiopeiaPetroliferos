@@ -5,6 +5,7 @@
 @layer base {
 	* {
 		font-family: 'Inter';
+		font-display: swap;
 	}
 
 	h1,

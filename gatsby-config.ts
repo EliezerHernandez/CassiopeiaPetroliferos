@@ -31,7 +31,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
 			options: {
 				google: {
-					families: ['Inter:400,600'],
+					families: ['Inter:400,600&display=swap'],
 				},
 			},
 		},

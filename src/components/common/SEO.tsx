@@ -3,18 +3,18 @@ import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
 
-// interface Metadata {
-// 	title: string;
-// 	description: string;
-// 	siteUrl: string;
-// 	image: string;
-// }
+interface Metadata {
+	title: string;
+	description: string;
+	siteUrl: string;
+	image: string;
+}
 
-// interface Query {
-// 	site: {
-// 		siteMetadata: Metadata;
-// 	};
-// }
+interface Query {
+	site: {
+		siteMetadata: Metadata;
+	};
+}
 
 const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 	title,
@@ -53,7 +53,11 @@ const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 	};
 
 	return (
-		<Helmet title={seo.title}>
+		<Helmet
+			title={seo.title}
+			htmlAttributes={{
+				lang: 'es',
+			}}>
 			<meta name="description" content={seo.description} />
 			<meta name="image" content={seo.image} />
 			{seo.url && <meta property="og:url" content={seo.url} />}
