@@ -6,14 +6,6 @@ import { Layout } from '../components/layout';
 //@ts-ignore
 import heroVideo from '../assets/main-hero-vid.mp4';
 import { Hero } from '../components/common/Hero';
-import { StaticImage } from 'gatsby-plugin-image';
-import * as React from 'react';
-import SEO from '../components/common/SEO';
-import { Layout } from '../components/layout';
-
-//@ts-ignore
-import heroVideo from '../assets/main-hero-vid.mp4';
-import { Hero } from '../components/common/Hero';
 import { Link } from 'gatsby';
 
 const IndexPage: React.FunctionComponent = () => {
