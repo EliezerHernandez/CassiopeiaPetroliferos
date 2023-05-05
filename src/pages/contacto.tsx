@@ -57,7 +57,7 @@ const ContactoPage: React.FunctionComponent = () => {
 								href="https://api.whatsapp.com/send/?phone=5215559513012&text&app_absent=0"
 								target="_blank"
 								rel="noopener noreferrer">
-								<button className="bg-green-600 text-white p-2 rounded text-sm font-bold flex gap-4 justify-center items-center">
+								<button className="btn bg-green-600 text-white p-2 rounded text-sm font-bold flex gap-4 justify-center items-center">
 									Llamar por Whatsapp
 									<svg
 										className="fill-current w-4 h-4"
