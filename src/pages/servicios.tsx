@@ -27,18 +27,18 @@ const ServiciosPage: React.FunctionComponent = () => {
 				}>
 				<h1>Servicios</h1>
 				<p className="text-lg">
-					Contamos con multiples servicios en nuestra empresa, conoce algunos de
-					ellos
+					Contamos con múltiples servicios en nuestra empresa, conoce algunos de
+					ellos.
 				</p>
 			</Hero>
 
 			<section className="flex flex-col">
 				<article className="fadeable servicios-item">
 					<div className="flex-1">
-						<h2>Combustibles con repaldo de laboratorios certificados</h2>
+						<h2>Combustibles con respaldo de laboratorios certificados</h2>
 						<p>
 							Ponemos a tu disposición toda la documentación correspondiente a
-							Certificado de Calidad en combustible bajo la NOM
+							Certificado de Calidad en combustible bajo la NOM.
 						</p>
 					</div>
 					<StaticImage
@@ -51,7 +51,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 				</article>
 				<article className="fadeable servicios-item">
 					<div className="flex-1">
-						<h2>Sinergia con compañias de transporte especializado</h2>
+						<h2>Sinergia con compañías de transporte especializado</h2>
 						<p>
 							Nuestros operadores están calificados en servicio al cliente y nos
 							comprometemos a realizar entregas en el tiempo establecido, además
@@ -93,7 +93,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 							Trabajamos bajo estándares de calidad y nos mantenemos
 							actualizados con nuestro programa de mejora continua que nos
 							permite ofrecerte la mejor calidad en servicio y atención desde tu
-							cotización hasta la descarga de combustible
+							cotización hasta la descarga de combustible.
 						</p>
 					</div>
 					<StaticImage
@@ -123,7 +123,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 				</article>
 				<article className="fadeable servicios-item">
 					<div className="flex-1">
-						<h2>Garantia de seguridad y confiabilidad operativa</h2>
+						<h2>Garantía de seguridad y confiabilidad operativa</h2>
 						<p>
 							Nuestro equipo estará en constante comunicación y total
 							disponibilidad atendiendo seguimientos, dudas e indicaciones para
@@ -141,7 +141,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 			</section>
 
 			<section className="py-8 px-4 lg:px-inside flex flex-col gap-8">
-				<h2 className="text-center">Trabajamos en coolaboración con</h2>
+				<h2 className="text-center">Trabajamos en colaboración con</h2>
 
 				<span className="flex gap-8 justify-center items-center flex-wrap">
 					<StaticImage

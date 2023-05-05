@@ -6,6 +6,14 @@ import { Layout } from '../components/layout';
 //@ts-ignore
 import heroVideo from '../assets/main-hero-vid.mp4';
 import { Hero } from '../components/common/Hero';
+import { StaticImage } from 'gatsby-plugin-image';
+import * as React from 'react';
+import SEO from '../components/common/SEO';
+import { Layout } from '../components/layout';
+
+//@ts-ignore
+import heroVideo from '../assets/main-hero-vid.mp4';
+import { Hero } from '../components/common/Hero';
 import { Link } from 'gatsby';
 
 const IndexPage: React.FunctionComponent = () => {
@@ -69,7 +77,8 @@ const IndexPage: React.FunctionComponent = () => {
 					src="../images/tilesets/mapacobertura.png"
 					alt="Mapa de cobertura"
 					placeholder="tracedSVG"
-					aspectRatio={738 / 499}
+					width={730}
+					layout="constrained"
 				/>
 			</section>
 
@@ -77,7 +86,7 @@ const IndexPage: React.FunctionComponent = () => {
 				<h2 className="text-center">
 					En Cassiopeia nos comprometemos con el servicio que brindamos
 				</h2>
-				<p className="text-center">Tenemos cualidades que nos distinguen</p>
+				<p className="text-center">Tenemos cualidades que nos distinguen.</p>
 
 				<section className="flex gap-8 mt-8 flex-wrap justify-center">
 					<article className="fadeable rounded shadow max-w-sm overflow-hidden bg-white">
@@ -128,7 +137,7 @@ const IndexPage: React.FunctionComponent = () => {
 							<h3>Somos distribuidores de PEMEX</h3>
 							<p>
 								Al ser distribuidores autorizados de PEMEX, nos comprometemos a
-								respetar todos los procesos y lineamientos para que la carga y
+								respetar todos los procesos y lineamientos para qué la carga y
 								descarga sea transparente y puntual con nuestros clientes.
 							</p>
 						</div>
@@ -148,7 +157,7 @@ const IndexPage: React.FunctionComponent = () => {
 							<p>
 								Nuestro equipo está preparado para atender todas tus dudas,
 								logística y lineamientos necesarios para efectuar el viaje y
-								descarga en todo momento, además de poner a tu disposicion
+								descarga en todo momento, además de poner a tu disposición
 								nuestras cuentas de monitoreo satelital.
 							</p>
 						</div>
@@ -165,31 +174,31 @@ const IndexPage: React.FunctionComponent = () => {
 					layout="fixed"
 				/>
 				<div className="fadeable mx-auto md:mx-0 flex-1 flex flex-col gap-4 max-w-md">
-					<h2>Descarga nuestra app!</h2>
+					<h2>¡Descarga nuestra app!</h2>
 					<p className="font-bold">Bienvenido a Cassiopeia</p>
 					<p>
 						Este 2022 iniciamos con nuestra nueva aplicación desde la cual
 						podrás:
 					</p>
 					<ul className="list-disc ml-5 text-primary-300 flex flex-col gap-2">
-						<li>Dar de alta tus estaciones y cantidad de almacenamiento</li>
-						<li>Recibir atención personalizada 24/7</li>
+						<li>Dar de alta tus estaciones y cantidad de almacenamiento.</li>
+						<li>Recibir atención personalizada 24/7.</li>
 						<li>
 							Recibir tu oferta de compra y firma la documentación
-							correspondiente
+							correspondiente.
 						</li>
-						<li>Recibir nuestras mejores tarifas</li>
-						<li>Comunicarte de forma segura con nosotros</li>
+						<li>Recibir nuestras mejores tarifas.</li>
+						<li>Comunicarte de forma segura con nosotros.</li>
 						<li>
 							Seguir envíos: siempre podrás saber en dónde está tu producto y
-							liuándo llega
+							cuándo llega.
 						</li>
-						<li>Gestiona tus ordenes e historial de compras</li>
-						<li>Gestión de toda tu documentación</li>
+						<li>Gestiona tus órdenes e historial de compras.</li>
+						<li>Gestión de toda tu documentación.</li>
 					</ul>
 
 					<p className="mt-4 font-bold text-sm text-neutral-700">
-						La aplicación esta disponible en:
+						La aplicación está disponible en:
 					</p>
 
 					<span className="flex gap-4 flex-wrap justify-center md:justify-start">

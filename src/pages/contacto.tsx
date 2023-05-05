@@ -27,7 +27,7 @@ const ContactoPage: React.FunctionComponent = () => {
 				}>
 				<h1>Contacto</h1>
 				<p className="text-lg">
-					Comunicate con nuestro personal y cotiza con nosotros
+					Comunícate con nuestro personal y cotiza con nosotros
 				</p>{' '}
 			</Hero>
 
@@ -73,7 +73,7 @@ const ContactoPage: React.FunctionComponent = () => {
 					<h2>Cotiza con nosotros</h2>
 					<p>
 						Haznos saber tu situación en el formulario y te atendemos en la
-						brevedad
+						brevedad.
 					</p>
 
 					<ContactForm />

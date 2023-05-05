@@ -126,8 +126,7 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 				</p>
 			) : msgStatus == 2 ? (
 				<p className="border-danger-300 border-2 rounded p-4 bg-red-100 font-bold text-danger-300">
-					Ha sucedido un error al enviar el mensaje, prueba de nuevo o intentalo
-					más tarde.
+					Ha sucedido un error al enviar el mensaje, prueba de nuevo o inténtalo más tarde. 
 				</p>
 			) : null}
 

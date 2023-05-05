@@ -26,13 +26,13 @@ export const Layout: React.FunctionComponent = ({ children }) => {
 		}[],
 		scroll_pos: number
 	) => {
-		let fadein_offset = (window.innerHeight * 3) / 4;
+		let fadein_offset = window.innerHeight;
 		let newElements = [];
 
 		for (let elem of elements) {
 			let elementInViewport =
-				elem.position < scroll_pos + fadein_offset &&
-				elem.position > scroll_pos - fadein_offset / 4;
+				elem.position < scroll_pos + (fadein_offset * 5) / 6 &&
+				elem.position > scroll_pos - fadein_offset / 3;
 			if (elementInViewport) {
 				elem.element.classList.add('fadein');
 			} else {

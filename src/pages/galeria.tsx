@@ -47,9 +47,9 @@ const GaleriaPage: React.FunctionComponent = () => {
 						}}
 					/>
 				}>
-				<h1>Galeria</h1>
+								<h1>Galería</h1>
 				<p className="text-lg">
-					Mira nuestra galeria operativa donde ponemos evidencias de servicio
+					Mira nuestra galería operativa donde ponemos evidencias de servicio.
 				</p>
 			</Hero>
 

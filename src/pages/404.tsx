@@ -16,7 +16,7 @@ const ErrorPage: React.FunctionComponent = () => {
 					<Link to="/" className="link text-primary-300">
 						aquí
 					</Link>{' '}
-					para volver a la pagina principal.
+					para volver a la página principal.
 				</p>
 			</section>
 		</Layout>

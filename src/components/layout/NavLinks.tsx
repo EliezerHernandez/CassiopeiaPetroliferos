@@ -16,7 +16,7 @@ export const NavLinks: React.FunctionComponent = ({}) => (
 			</li>
 			<li>
 				<Link to="/galeria/" className="link" activeClassName="link primary">
-					Galeria
+					Galería
 				</Link>
 			</li>
 			<li>
