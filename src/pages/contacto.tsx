@@ -30,7 +30,7 @@ const ContactoPage: React.FunctionComponent = () => {
 				</p>{' '}
 			</Hero>
 
-			<section className="py-8 px-4 lg:px-inside flex gap-8">
+			<section className="py-8 px-4 lg:px-inside flex gap-8 flex-col md:flex-row">
 				<div className="flex-1 flex flex-col gap-4">
 					<h2>Información de contacto</h2>
 					<div>
