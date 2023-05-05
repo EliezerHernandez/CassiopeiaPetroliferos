@@ -11,12 +11,12 @@ module.exports = {
 	plugins: [
 		'gatsby-plugin-postcss',
 		'gatsby-plugin-image',
-		// {
-		//   resolve: "gatsby-plugin-google-analytics",
-		//   options: {
-		//     trackingId: "",
-		//   },
-		// },
+		{
+			resolve: 'gatsby-plugin-google-analytics',
+			options: {
+				trackingId: 'G-ZKNP9KCMSY',
+			},
+		},
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-sitemap',
 		{
