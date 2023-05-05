@@ -24,10 +24,7 @@ const GaleriaPage: React.FunctionComponent = () => {
 		}
 	`);
 
-	const images = imageQuery.allFile.nodes.map((node) => ({
-		thumb: getImage(node.childImageSharp.thumb),
-		full: getImage(node.childImageSharp.full),
-	}));
+	const images = imageQuery.allFile.nodes.map((node) => node.childImageSharp);
 
 	return (
 		<Layout>

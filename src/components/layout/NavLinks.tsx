@@ -10,17 +10,17 @@ export const NavLinks: React.FunctionComponent = ({}) => (
 				</Link>
 			</li>
 			<li>
-				<Link to="/servicios" className="link" activeClassName="link primary">
+				<Link to="/servicios/" className="link" activeClassName="link primary">
 					Servicios
 				</Link>
 			</li>
 			<li>
-				<Link to="/galeria" className="link" activeClassName="link primary">
+				<Link to="/galeria/" className="link" activeClassName="link primary">
 					Galeria
 				</Link>
 			</li>
 			<li>
-				<Link to="/contacto" className="link" activeClassName="link primary">
+				<Link to="/contacto/" className="link" activeClassName="link primary">
 					Contacto
 				</Link>
 			</li>

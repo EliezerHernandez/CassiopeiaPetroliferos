@@ -52,7 +52,7 @@ export const MainFooter: React.FunctionComponent = () => {
 					<button className="font-bold" onClick={openAvisoPrivacidad}>
 						Aviso de privacidad
 					</button>
-					<a href="/legalidad" className="font-bold">
+					<a href="/legalidad/" className="font-bold">
 						Legalidad
 					</a>
 				</div>
