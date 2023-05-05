@@ -15,10 +15,10 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 		setLoading(true);
 		try {
 			await mailClient.sendForm(
-				'service_yecf4o4',
+				`${process.env.MAIL_SERVICE_ID}`,
 				'contact_form',
 				formRef.current,
-				`${process.env.GATSBY_MAIL_API_KEY}`
+				`${process.env.MAIL_API_KEY}`
 			);
 			setMsgStatus(1);
 			formRef.current.reset();
