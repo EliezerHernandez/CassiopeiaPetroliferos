@@ -33,7 +33,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 			</Hero>
 
 			<section className="flex flex-col">
-				<article className="servicios-item">
+				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Combustibles con repaldo de laboratorios certificados</h2>
 						<p>
@@ -49,7 +49,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						width={320}
 					/>
 				</article>
-				<article className="servicios-item">
+				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Sinergia con compañias de transporte especializado</h2>
 						<p>
@@ -67,7 +67,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						width={320}
 					/>
 				</article>
-				<article className="servicios-item">
+				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Colocación de tanques de autoconsumo</h2>
 						<p>
@@ -86,7 +86,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						width={320}
 					/>
 				</article>
-				<article className="servicios-item">
+				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Personal altamente capacitado</h2>
 						<p>
@@ -104,7 +104,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						width={320}
 					/>
 				</article>
-				<article className="servicios-item">
+				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Ventas directas con clientes</h2>
 						<p>
@@ -121,7 +121,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						width={320}
 					/>
 				</article>
-				<article className="servicios-item">
+				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Garantia de seguridad y confiabilidad operativa</h2>
 						<p>
@@ -145,6 +145,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 
 				<span className="flex gap-8 justify-center items-center flex-wrap">
 					<StaticImage
+						className="fadeable"
 						src="../images/icons/pemex.png"
 						alt=""
 						placeholder="tracedSVG"
@@ -152,6 +153,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						layout="fixed"
 					/>
 					<StaticImage
+						className="fadeable"
 						src="../images/icons/cre.png"
 						alt=""
 						placeholder="tracedSVG"
@@ -159,6 +161,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						layout="fixed"
 					/>
 					<StaticImage
+						className="fadeable"
 						src="../images/icons/canacar.png"
 						alt=""
 						placeholder="tracedSVG"
@@ -166,6 +169,7 @@ const ServiciosPage: React.FunctionComponent = () => {
 						layout="fixed"
 					/>
 					<StaticImage
+						className="fadeable"
 						src="../images/icons/grupo-transportes.png"
 						alt=""
 						placeholder="tracedSVG"

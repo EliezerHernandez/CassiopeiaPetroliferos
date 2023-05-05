@@ -14,7 +14,7 @@ export const AccordeonItem: React.FunctionComponent<Props> = ({
 	const toggle = () => setIsOpen((prev) => !prev);
 
 	return (
-		<article className="bg-white rounded shadow ">
+		<article className="fadeable bg-white rounded shadow ">
 			<div
 				onClick={toggle}
 				className={`cursor-pointer p-8  flex justify-between items-center ${

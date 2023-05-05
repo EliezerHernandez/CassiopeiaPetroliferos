@@ -31,7 +31,7 @@ const ContactoPage: React.FunctionComponent = () => {
 				</p>{' '}
 			</Hero>
 
-			<section className="py-8 px-4 lg:px-inside flex gap-8 flex-col md:flex-row">
+			<section className="fadeable py-8 px-4 lg:px-inside flex gap-8 flex-col md:flex-row">
 				<div className="flex-1 flex flex-col gap-4">
 					<h2>Información de contacto</h2>
 					<div>
@@ -59,7 +59,7 @@ const ContactoPage: React.FunctionComponent = () => {
 			</section>
 
 			<section className="bg-neutral-100 py-8 px-4 lg:px-inside">
-				<article className="p-8 w-full bg-white rounded shadow">
+				<article className="fadeable p-8 w-full bg-white rounded shadow">
 					<h2>Cotiza con nosotros</h2>
 					<p>
 						Haznos saber tu situación en el formulario y te atendemos en la

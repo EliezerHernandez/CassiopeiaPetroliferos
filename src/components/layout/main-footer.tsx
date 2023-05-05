@@ -10,7 +10,7 @@ export const MainFooter: React.FunctionComponent = () => {
 	return (
 		<>
 			{showAvisoPrivacidad && (
-				<div className="fixed bg-black/50 left-0 right-0 top-0 bottom-0 z-20 py-8 px-4">
+				<div className="fade fixed bg-black/50 left-0 right-0 top-0 bottom-0 z-20 py-8 px-4">
 					<div className="md:max-w-lg flex flex-col gap-8 p-4 rounded shadow bg-white mx-auto h-5/6 overflow-y-scroll">
 						<button
 							className="font-bold text-neutral-700 self-end"

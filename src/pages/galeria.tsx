@@ -54,7 +54,7 @@ const GaleriaPage: React.FunctionComponent = () => {
 				</p>
 			</Hero>
 
-			<section className="py-8 px-4 lg:px-inside flex flex-wrap justify-center gap-4">
+			<section className="fadeable py-8 px-4 lg:px-inside flex flex-wrap justify-center gap-4">
 				<Gallery images={images} customWrapper={imgWrapper} />
 			</section>
 		</Layout>

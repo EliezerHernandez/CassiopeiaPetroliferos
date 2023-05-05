@@ -4,10 +4,30 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { NavLinks } from './NavLinks';
 
 export const MainHeader: React.FunctionComponent = () => {
+	const hamburgerRef = React.useRef(null);
 	const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = React.useState(false);
 
 	const openMenu = () => setIsHamburgerMenuOpen(true);
 	const closeMenu = () => setIsHamburgerMenuOpen(false);
+
+	const handleMenuClose = async () => {
+		const modal = hamburgerRef.current;
+		modal.animate(
+			[
+				{
+					opacity: 1,
+				},
+				{
+					opacity: 0,
+				},
+			],
+			{
+				easing: 'ease',
+				duration: 400,
+			}
+		);
+		setTimeout(closeMenu, 400);
+	};
 
 	return (
 		<header className="pt-4 pb-8 px-4 lg:px-inside shadow-lg flex flex-col items-center gap-8 md:items-end md:flex-row md:justify-between">
@@ -29,13 +49,15 @@ export const MainHeader: React.FunctionComponent = () => {
 			</div>
 
 			{isHamburgerMenuOpen && (
-				<div className="fixed bg-black/50 left-0 right-0 top-0 bottom-0 z-30 py-8 px-4">
+				<div
+					className="fade fixed bg-black/50 left-0 right-0 top-0 bottom-0 z-30 py-8 px-4"
+					ref={hamburgerRef}>
 					<div className="fixed left-0 top-0 bottom-0 bg-white py-8 px-4 flex flex-col items-start gap-8 max-w-xs w-full">
 						<header className="flex justify-between w-full items-center">
 							<h2>Enlaces</h2>
 							<button
 								className="text-2xl font-bold text-neutral-700 bg-white p-2 border-2 rounded w-10 h-10 text-center flex justify-center items-center"
-								onClick={closeMenu}>
+								onClick={handleMenuClose}>
 								✕
 							</button>
 						</header>

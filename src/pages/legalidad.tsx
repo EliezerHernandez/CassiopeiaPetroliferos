@@ -8,7 +8,7 @@ const LegalidadPage: React.FunctionComponent = () => {
 		<Layout>
 			<SEO title="Legalidad | Cassiopeia" />
 
-			<section className="py-8 px-4 lg:px-inside text-center flex flex-col gap-4">
+			<section className="fadeable py-8 px-4 lg:px-inside text-center flex flex-col gap-4">
 				<h1>Legalidad</h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
