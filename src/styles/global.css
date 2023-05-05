@@ -38,7 +38,8 @@
 
 	input[type='text'],
 	input[type='number'],
-	input[type='mail'],
+	input[type='email'],
+	input[type='tel'],
 	textarea {
 		@apply border border-neutral-300 rounded p-2;
 	}

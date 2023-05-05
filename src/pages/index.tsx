@@ -43,7 +43,7 @@ const IndexPage: React.FunctionComponent = () => {
 					<div>
 						<h2>Contamos con cobertura nacional</h2>
 						<p>
-							Estamos disponibles en los siguientes estados de la republica.
+						Estamos disponibles en los siguientes estados de la república.
 						</p>
 					</div>
 					<div className="flex gap-8">

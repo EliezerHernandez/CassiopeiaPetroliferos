@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import type { IGatsbyImageData } from 'gatsby-plugin-image';
+
 interface Props {
 	images: {
 		thumb: IGatsbyImageData;
@@ -8,6 +9,7 @@ interface Props {
 	}[];
 	imageClass?: string;
 }
+
 export const Gallery: React.FunctionComponent<Props> = ({
 	images,
 	imageClass,
@@ -15,19 +17,22 @@ export const Gallery: React.FunctionComponent<Props> = ({
 	const [isVisorOpen, setIsVisorOpen] = React.useState(false);
 	const [currentImageIndx, setCurrentImageIndx] = React.useState<number>();
 	const visorBg = React.useRef();
+
 	const openImage = (index: number) => {
 		setCurrentImageIndx(index);
 		setIsVisorOpen(true);
 	};
+
 	const closeImage = () => {
 		setCurrentImageIndx(undefined);
 		setIsVisorOpen(false);
 	};
+
 	return (
 		<>
 			{isVisorOpen && (
 				<div
-					className="bg-black/75 fixed top-0 left-0 bottom-0 right-0 z-20 flex flex-col py-8 px-inside"
+					className="bg-black/75 fixed top-0 left-0 bottom-0 right-0 z-20 flex flex-col py-8 px-4"
 					onClick={(e) => {
 						if (e.target == visorBg.current) {
 							closeImage();
