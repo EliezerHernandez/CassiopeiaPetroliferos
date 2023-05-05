@@ -31,14 +31,16 @@ export const MainHeader: React.FunctionComponent = () => {
 
 	return (
 		<header className="pt-4 pb-8 px-4 lg:px-inside shadow-lg flex flex-col items-center gap-8 md:items-end md:flex-row md:justify-between">
-			<StaticImage
-				className="-ml-2"
-				src="../../images/tilesets/logo.png"
-				alt="Cassiopeia Logo"
-				placeholder="tracedSVG"
-				width={255}
-				loading="eager"
-			/>
+			<Link to="/">
+				<StaticImage
+					className="-ml-2"
+					src="../../images/tilesets/logo.png"
+					alt="Cassiopeia Logo"
+					placeholder="tracedSVG"
+					width={255}
+					loading="eager"
+				/>
+			</Link>
 
 			<div className="absolute right-4 top-4 md:hidden">
 				<button
