@@ -2,6 +2,3 @@ node_modules/
 .cache/
 # public
 public
-.env
-src/images
-src/gallery
