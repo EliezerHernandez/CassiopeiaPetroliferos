@@ -18,7 +18,7 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 				'service_yecf4o4',
 				'contact_form',
 				formRef.current,
-				'user_nOipuykrCKn1qxgbo30mo'
+				`${process.env.GATSBY_MAIL_API_KEY}`
 			);
 			setMsgStatus(1);
 			formRef.current.reset();
