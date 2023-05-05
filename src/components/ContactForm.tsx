@@ -63,11 +63,11 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 					<input
 						type="tel"
 						name="telefono_usuario"
-						pattern="[0-9]{2,3}-[0-9]{3}-[0-9]{4}"
+						// pattern="[0-9]{2,3}-[0-9]{3}-[0-9]{4}"
 					/>
-					<p className="text-xs text-neutral-700">
+					{/* <p className="text-xs text-neutral-700">
 						Ingresa un telefono xxx-xxx-xxxx
-					</p>
+					</p> */}
 				</div>
 			</div>
 
@@ -120,12 +120,12 @@ export const ContactForm: React.FunctionComponent = ({}) => {
 			</div>
 
 			{msgStatus == 1 ? (
-				<p className="font-bold text-success-300">
+				<p className="border-success-300 border-2 rounded p-4 bg-green-100 font-bold text-success-300">
 					Tu mensaje ha sido recibido por nuestro personal, nos comunicaremos
 					contigo lo más pronto posible.
 				</p>
 			) : msgStatus == 2 ? (
-				<p className="font-bold text-danger-300">
+				<p className="border-danger-300 border-2 rounded p-4 bg-red-100 font-bold text-danger-300">
 					Ha sucedido un error al enviar el mensaje, prueba de nuevo o intentalo
 					más tarde.
 				</p>

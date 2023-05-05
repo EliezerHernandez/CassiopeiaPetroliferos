@@ -26,6 +26,8 @@ const GaleriaPage: React.FunctionComponent = () => {
 
 	const images = imageQuery.allFile.nodes.map((node) => node.childImageSharp);
 
+	console.log(images);
+	
 	return (
 		<Layout>
 			<SEO title="Galeria | Cassiopeia" />

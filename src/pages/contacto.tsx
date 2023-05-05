@@ -36,11 +36,21 @@ const ContactoPage: React.FunctionComponent = () => {
 					<h2>Información de contacto</h2>
 					<div>
 						<p className="font-bold">Correo</p>
-						<p>ventas@cassiopeia.com.mx</p>
+						<p>
+							<a
+								className="text-primary-300"
+								href="mailto:ventas@cassiopeia.com.mx">
+								ventas@cassiopeia.com.mx
+							</a>
+						</p>
 					</div>
 					<div>
 						<p className="font-bold">Teléfono</p>
-						<p>Tel. (55) 5951 3012</p>
+						<p>
+							<a className="text-primary-300" href="tel:+5559513012">
+								Tel. (55) 5951 3012
+							</a>
+						</p>
 					</div>
 					<div>
 						<p className="font-bold">Dirección</p>
