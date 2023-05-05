@@ -2,7 +2,7 @@ import * as React from 'react';
 
 export const AvisoDePrivacidad: React.FunctionComponent = ({}) => (
 	<>
-		<div>
+		<div className="aviso-item">
 			<h2>Aviso de privacidad</h2>
 			<p>
 				A los Usuarios (como se definen posteriormente), les informamos que el
@@ -14,7 +14,7 @@ export const AvisoDePrivacidad: React.FunctionComponent = ({}) => (
 				en su cumplimiento.
 			</p>
 		</div>
-		<div>
+		<div className="aviso-item">
 			<h3>RESPONSABLE DEL TRATAMIENTO DE SUS DATOS PERSONALES</h3>
 			<p>
 				Para Cassiopeia (en adelante la “Empresa”) la seguridad de los Usuarios
@@ -23,7 +23,7 @@ export const AvisoDePrivacidad: React.FunctionComponent = ({}) => (
 				seguridad técnicas, físicas y administrativas.
 			</p>
 		</div>
-		<div>
+		<div className="aviso-item">
 			<h3>DOMICILIO DEL RESPONSABLE</h3>
 			<p>
 				Para efectos del presente aviso de privacidad, la Empresa señala,
@@ -31,7 +31,7 @@ export const AvisoDePrivacidad: React.FunctionComponent = ({}) => (
 				Nte., CP: 06700, Cuauhtémoc, Ciudad de México"
 			</p>
 		</div>
-		<div>
+		<div className="aviso-item">
 			<h3>DATOS PERSONALES QUE PUEDEN SER RECOLECTADOS</h3>
 			<p>
 				{' '}
@@ -40,7 +40,7 @@ export const AvisoDePrivacidad: React.FunctionComponent = ({}) => (
 				siguientes: Teléfono Correo Electrónico
 			</p>
 		</div>
-		<div>
+		<div className="aviso-item">
 			<h3>FINALIDADES DEL TRATAMIENTO DE SUS DATOS PERSONALES</h3>
 			<p>
 				Los datos personales que la Empresa recabe serán utilizados para atender
@@ -48,7 +48,7 @@ export const AvisoDePrivacidad: React.FunctionComponent = ({}) => (
 				servicios
 			</p>
 		</div>
-		<div>
+		<div className="aviso-item">
 			<h3>
 				MEDIOS PARA EJERCER LOS DERECHOS DE ACCESO, RECTIFICACIÓN, CANCELACIÓN U
 				OPOSICIÓN (DERECHOS ARCO)

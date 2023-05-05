@@ -108,6 +108,14 @@
 		@apply bg-neutral-100 sm:flex-row-reverse;
 	}
 
+	.aviso-item {
+		@apply flex flex-col gap-4;
+	}
+
+	.aviso-item p {
+		@apply text-justify;
+	}
+
 	.form {
 		@apply flex flex-col gap-8;
 	}
