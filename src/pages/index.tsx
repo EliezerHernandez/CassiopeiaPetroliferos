@@ -48,20 +48,20 @@ const IndexPage: React.FunctionComponent = () => {
 					</div>
 					<div className="flex gap-8">
 						<ul>
-							<li>CDMX</li>
-							<li>Coahuila</li>
-							<li>Estado de México</li>
+							<li>Tamaulipas</li>
 							<li>Nuevo León</li>
-							<li>Puebla</li>
-							<li>Tabasco</li>
+							<li>Estado de México</li>
+							<li>Veracruz</li>
+							<li></li>
+							<li></li>
 						</ul>
 						<ul>
-							<li>Querétaro</li>
-							<li>San Luis Potosí</li>
-							<li>Tamaulipas</li>
-							<li>Veracruz</li>
-							<li>Colima</li>
-							<li>Durango</li>
+							<li>Campeche</li>
+							<li>Hidalgo</li>
+							<li>Quintana Roo</li>
+							<li></li>
+							<li></li>
+							<li></li>
 						</ul>
 					</div>
 				</div>
