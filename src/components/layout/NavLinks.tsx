@@ -27,7 +27,7 @@ export const NavLinks: React.FunctionComponent = ({}) => (
 		</ul>
 		<a
 			className="btn primary"
-			href="https://cassiopeia.strappberry.com/admin/login">
+			href="https://api.cassiopeia.com.mx/admin/login">
 			Ingresar
 		</a>{' '}
 	</>
