@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as mailClient from 'emailjs-com';
-import { EntidadesFederativas } from './utils/EntidadesFederativas';
+import { EntidadesFederativas } from './utils/EntidadesFederativas'
 import { Spinner } from './common/Spinner';
 
 export const ContactForm: React.FunctionComponent = ({}) => {
