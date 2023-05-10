@@ -59,7 +59,7 @@ const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 	const seo = {
 		title: title || defaultTitle,
 		description: description || defaultDescription,
-		image: image || defaultImage,
+		image: `${url}${image || defaultImage}`,
 		url: `${url}${pathname}`,
 		keywords: keywords || defaultKeywords,
 		twitter: defaultTwitterCreator,
@@ -114,10 +114,6 @@ const SEO: React.FunctionComponent<Partial<Metadata>> = ({
 							{
 								name: 'twitter:card',
 								content: 'summary_large_image',
-							},
-							{
-								name: 'twitter:image',
-								content: seo.image,
 							},
 					  ]
 					: [
