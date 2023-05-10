@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { getImage, StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import { Hero } from '../components/common/Hero';
+import { Gallery } from '../components/common/Gallery';
 import SEO from '../components/common/SEO';
 import { Layout } from '../components/layout';
 // import Gallery from '@browniebroke/gatsby-image-gallery';
