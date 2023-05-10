@@ -157,7 +157,7 @@ const IndexPage: React.FunctionComponent = () => {
 				</section>
 			</section>
 
-			<section className="py-8 px-4 lg:px-inside flex flex-col md:flex-row gap-8 md:items-center justify-center">
+			{/* <section className="py-8 px-4 lg:px-inside flex flex-col md:flex-row gap-8 md:items-center justify-center">
 				<StaticImage
 					className="fadeable mx-auto md:mx-0"
 					src="../images/tilesets/device.png"
@@ -211,7 +211,7 @@ const IndexPage: React.FunctionComponent = () => {
 					<span className="flex gap-4 flex-wrap justify-center md:justify-start">
 					</span>
 				</div>
-			</section>
+			</section> */}
 		</Layout>
 	);
 };
