@@ -33,6 +33,24 @@ const ServiciosPage: React.FunctionComponent = () => {
 			</Hero>
 
 			<section className="flex flex-col">
+			<article className="fadeable servicios-item">
+					<div className="flex-1">
+						<h2>Equipos en Comodato</h2>
+						<p>
+							Ofrecemos la estación de autoconsumo, para controlar cada carga
+							de tu flotilla y una mayor productividad reduciendo el timpo muerto
+							por cada carga, además de seguridad en el producto, transparecia de 
+							la información e integración en tu Sistema de Administración.
+						</p>
+					</div>
+					<StaticImage
+						className="img"
+						src="../images/pictures/comodato.png"
+						alt=""
+						placeholder="blurred"
+						width={320}
+					/>
+				</article>
 				<article className="fadeable servicios-item">
 					<div className="flex-1">
 						<h2>Combustibles con respaldo de laboratorios certificados</h2>
