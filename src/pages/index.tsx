@@ -145,7 +145,7 @@ const IndexPage: React.FunctionComponent = () => {
 							/>
 						</div>
 						<div className="p-4 flex flex-col gap-4">
-							<h3>Atención 24/7 los 365 dias del año</h3>
+							<h3>Atención 24/7 los 365 días del año</h3>
 							<p>
 								Nuestro equipo está preparado para atender todas tus dudas,
 								logística y lineamientos necesarios para efectuar el viaje y

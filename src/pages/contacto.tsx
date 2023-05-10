@@ -39,15 +39,15 @@ const ContactoPage: React.FunctionComponent = () => {
 						<p>
 							<a
 								className="text-primary-300"
-								href="mailto:ventas@cassiopeia.com.mx">
-								ventas@cassiopeia.com.mx
+								href="mailto:corporativo@cassiopeiamx.com">
+								corporativo@cassiopeiamx.com
 							</a>
 						</p>
 					</div>
 					<div>
 						<p className="font-bold">Dirección</p>
 						<p>
-							Av. Veracruz No. 85, Col. Condesa, Cuahutémoc, C.P. 06140 CDMX.
+							Av. Insurgentes Sur 1571-203 Col. San José Insurgentes C.P. 03900 Benito Juárez, CDMX.
 						</p>
 					</div>
 				</div>

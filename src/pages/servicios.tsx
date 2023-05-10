@@ -38,8 +38,8 @@ const ServiciosPage: React.FunctionComponent = () => {
 						<h2>Equipos en Comodato</h2>
 						<p>
 							Ofrecemos la estación de autoconsumo, para controlar cada carga
-							de tu flotilla y una mayor productividad reduciendo el timpo muerto
-							por cada carga, además de seguridad en el producto, transparecia de 
+							de tu flotilla y una mayor productividad reduciendo el tiempo muerto
+							por cada carga, además de seguridad en el producto, transparencia de 
 							la información e integración en tu Sistema de Administración.
 						</p>
 					</div>
