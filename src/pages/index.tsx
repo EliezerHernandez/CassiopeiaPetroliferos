@@ -192,8 +192,7 @@ const IndexPage: React.FunctionComponent = () => {
 					<p className="mt-4 font-bold text-sm text-neutral-700">
 						La aplicación está disponible en:
 					</p>
-
-					<span className="flex gap-4 flex-wrap justify-center md:justify-start">
+					<a href="https://play.google.com/store/apps/details?id=com.strappberry.cassiopeia">
 						<StaticImage
 							className="link shadow cursor-pointer overflow-hidden"
 							src="../images/tilesets/googleplay-btn.png"
@@ -208,6 +207,8 @@ const IndexPage: React.FunctionComponent = () => {
 							width={200}
 							placeholder="blurred"
 						/>
+						</a>
+					<span className="flex gap-4 flex-wrap justify-center md:justify-start">
 					</span>
 				</div>
 			</section>
