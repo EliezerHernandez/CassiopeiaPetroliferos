@@ -139,7 +139,7 @@ const IndexPage: React.FunctionComponent = () => {
 						<div className="h-40 overflow-hidden">
 							<StaticImage
 								className="-translate-y-8"
-								src="../images/pictures/contacto-servicio.JPG"
+								src="../images/pictures/contacto-servicio.jpeg"
 								alt=""
 								layout="fullWidth"
 							/>
