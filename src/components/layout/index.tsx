@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { WhatsappButton } from '../WhatsappButton';
+// import { WhatsappButton } from '../WhatsappButton';
 import { MainFooter } from './main-footer';
 import { MainHeader } from './main-header';
 
@@ -62,7 +62,6 @@ export const Layout: React.FunctionComponent = ({ children }) => {
 			<MainHeader />
 			<main>{children}</main>
 			<MainFooter />
-			<WhatsappButton />
 		</>
 	);
 };
